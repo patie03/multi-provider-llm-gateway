@@ -122,11 +122,8 @@ with answer_col:
 with metrics_col:
     st.subheader("Telemetry")
     status_box = st.empty()
-    row1 = st.columns(2)
-    row2 = st.columns(2)
-    ttft_box, tps_box = row1[0].empty(), row1[1].empty()
-    in_box, out_box = row2[0].empty(), row2[1].empty()
-    cost_box = st.empty()
+    # One metric per row so long values are never cut off on narrow screens.
+    ttft_box, tps_box, in_box, out_box, cost_box = (st.empty() for _ in range(5))
 
 
 def show_metrics(ttft="–", tps="–", tokens_in="–", tokens_out="–", cost="–") -> None:
