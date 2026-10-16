@@ -4,7 +4,7 @@ One async streaming interface over **OpenAI** and **Anthropic**, with real-time 
 cost telemetry, plus a Streamlit web UI.
 
 - **Live demo:** https://patie03-llm-gateway.streamlit.app
-- **Video walkthrough:** _add your YouTube link here_
+- **Video walkthrough:** https://youtu.be/xlJpLEFG-L8
 
 ## Architecture
 
